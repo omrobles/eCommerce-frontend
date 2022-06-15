@@ -1,0 +1,45 @@
+.Jumbotron{
+    max-width: 1124px;
+    margin: 25px auto;
+    width: 100%;
+    height: 80vh;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../media/MEFP_ImagenCurso.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    box-shadow: 0px 10px 9px -3px rgba(110,110,110,0.93);
+}
+
+.JumboContainer{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    color: #fff;
+    text-align: center;
+}
+
+.JumboContainer h1{
+    padding-bottom: 20px;
+}
+
+.JumboContainer a{
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none; 
+    color: #fff;
+}
+
+.JumboContainer a:hover{
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #555;
+    background-color: #fff;
+}
+
+
+

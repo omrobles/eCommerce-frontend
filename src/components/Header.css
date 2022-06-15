@@ -1,10 +1,10 @@
 .NavBar{
     padding: 10px 15px;
     max-height: 150px;
-    box-shadow: 0px 4px 4px 0px rgba(110,110,110,0.93);
+    box-shadow: 0px 10px 9px -3px rgba(110,110,110,0.93);
     display: flex;
     width: 100%;
-    }
+}
 
 .NavBar img{
     height: 50px;
@@ -15,6 +15,10 @@
     margin: auto 10px;
     text-decoration: none;
     color: rgb(66, 66, 66);
+}
+
+.NavBar a:hover{
+    transform: scale(1.2);
 }
 
 #staticLinks{
