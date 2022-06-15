@@ -1,0 +1,31 @@
+.NavBar{
+    padding: 10px 15px;
+    max-height: 150px;
+    box-shadow: 0px 4px 4px 0px rgba(110,110,110,0.93);
+    display: flex;
+    width: 100%;
+    }
+
+.NavBar img{
+    height: 50px;
+    color: rgb(66, 66, 66);
+}
+
+.NavBar a{
+    margin: auto 10px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+#staticLinks{
+    width: 20%;
+    display: flex;
+    font-weight: 700;
+}
+
+#dynamicLinks{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
