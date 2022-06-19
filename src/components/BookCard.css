@@ -1,0 +1,52 @@
+.Card{
+    max-width: 25%;
+    margin: 10px 15px;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
+.ImageContainer{
+    max-height: 320px;
+    border-radius: 10px 10px 0 0 ;
+    overflow: hidden;
+}
+
+.ImageContainer img{
+    width: 100%;
+   
+}
+
+.InfoContainer{
+    width: 100%;
+    margin: 0 5px;
+}
+
+.InfoContainer h3{
+    height: 45px;
+}
+
+.InfoContainer p{
+    font-size: 90%;
+}
+
+.InfoContainer div{
+    height: 30px;
+    margin-top: 5px;
+}
+
+.InfoContainer a{
+    margin: 5px;
+    padding: 3px 10px;
+    border:2px solid #3498db;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 70%;
+    text-decoration: none;
+}
+
+.InfoContainer a:hover{
+    background-color: #fff;
+    color: #3498db;
+    font-weight: 600;
+}

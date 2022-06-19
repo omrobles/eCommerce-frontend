@@ -14,10 +14,22 @@ const BookState = (props) => {
 
   const getBooks = async () => {
     try {
-      const res = await AxiosClient.get("get-books");
+      const res = await AxiosClient.get("/book/get-books");
       dispatch({
         type: "GET_BOOKS",
-        payload: res.data.books,
+        payload: res.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getSelectedBooks = async () => {
+    try {
+      const res = await AxiosClient.get("/book/selected-books");
+      dispatch({
+        type: "SELECTED_BOOKS",
+        payload: res.data,
       });
     } catch (error) {
       console.log(error);
@@ -29,6 +41,7 @@ const BookState = (props) => {
       value={{
         books: globalState.books,
         getBooks,
+        getSelectedBooks,
       }}
     >
       {props.children}

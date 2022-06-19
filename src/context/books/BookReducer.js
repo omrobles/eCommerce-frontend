@@ -5,6 +5,11 @@ const reducer = (globalState, action) => {
         ...globalState,
         books: action.payload,
       };
+    case "SELECTED_BOOKS":
+      return {
+        ...globalState,
+        books: action.payload,
+      };
 
     default:
       return globalState;

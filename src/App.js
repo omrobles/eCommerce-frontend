@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import ShopBag from "./components/ShopBag";
+import Footer from "./components/Footer";
 
 import BookState from "./context/books/BookState";
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/perfil" element={<Profile />} />
             <Route path="/carrito" element={<ShopBag />} />
           </Routes>
+          <Footer />
         </Router>
       </BookState>
     </div>
