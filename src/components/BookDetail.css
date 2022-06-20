@@ -1,0 +1,46 @@
+.DetailsContainer{
+    margin: 10px auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.DetailsContainer h1{
+    width: 100%;
+    margin: 5px 0;
+}
+
+#Backwards{
+    width: 100%;
+    margin: 15px 10px 0 10px;
+}
+
+#Backwards a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.DetImgSub{
+    max-width: 30%;
+}
+
+.DetImgSub img{
+    width: 100%;
+    height: auto;
+}
+
+.DetInfoSub {
+    width: 70%;
+    padding: 0 10px;
+}
+
+.DetInfoSub p:nth-child(1){
+    font-size: 150%;
+}
+
+.DetInfoSub p:nth-child(5){
+    font-size: 70%;
+    text-align: justify;
+}

@@ -17,19 +17,19 @@ const Header = () => {
         <Link to="/">
           <img src={logo} />
         </Link>
-        <Link to="/catalogo">Catalogo</Link>
+        <Link to="/catalogo">Catálogo</Link>
       </div>
       <div id="dynamicLinks">
-        <Link to="/carrito">
+        <Link title="Carrito" to="/carrito">
           <FontAwesomeIcon icon={faCartShopping} />
         </Link>
-        <Link to="/perfil">
+        <Link title="Perfil" to="/perfil">
           <FontAwesomeIcon icon={faUserGear} />
         </Link>
-        <Link to="/registro">
+        <Link title="Registro" to="/registro">
           <FontAwesomeIcon icon={faUserPlus} />
         </Link>
-        <Link to="/login">
+        <Link title="Acceder" to="/login">
           <FontAwesomeIcon icon={faRightToBracket} />
         </Link>
       </div>

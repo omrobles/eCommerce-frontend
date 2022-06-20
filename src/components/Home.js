@@ -9,18 +9,15 @@ const Home = () => {
   const { books, getSelectedBooks } = booksCtx;
 
   useEffect(() => {
-    // getBooks();
     getSelectedBooks();
   }, []);
-
-  console.log();
 
   return (
     <section>
       <div className="Jumbotron">
         <div className="JumboContainer">
           <h1>Aprende finanzas personales de los mejores de la historia.</h1>
-          <Link to="/catalogo">Ir al catalogo</Link>
+          <Link to="/catalogo">Ir al catálogo</Link>
         </div>
       </div>
       <div className="Products">
@@ -30,7 +27,7 @@ const Home = () => {
             books.map((book) => {
               return <BookCard key={book._id} book={book} />;
             })}
-          <Link title="Ir a catalogo" id="linkCatalog" to="/catalogo">
+          <Link title="Ir a catálogo" id="linkCatalog" to="/catalogo">
             ...
           </Link>
         </div>

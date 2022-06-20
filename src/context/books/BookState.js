@@ -12,9 +12,11 @@ const BookState = (props) => {
 
   const [globalState, dispatch] = useReducer(BookReducer, initialState);
 
-  const getBooks = async () => {
+  const getBooks = async (id) => {
     try {
-      const res = await AxiosClient.get("/book/get-books");
+      const res = id
+        ? await AxiosClient.get(`/book/get-books?_id=${id}`)
+        : await AxiosClient.get("/book/get-books");
       dispatch({
         type: "GET_BOOKS",
         payload: res.data,
