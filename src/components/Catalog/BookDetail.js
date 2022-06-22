@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import BookContext from "../context/books/BookContext";
+import BookContext from "../../context/books/BookContext";
 import { useParams, Link } from "react-router-dom";
 import "./BookDetail.css";
 

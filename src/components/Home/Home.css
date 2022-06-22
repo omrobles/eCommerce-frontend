@@ -4,7 +4,7 @@
     width: 100%;
     height: 80vh;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../media/MEFP_ImagenCurso.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../media/MEFP_ImagenCurso.jpg);
     background-size: cover;
     background-position: center;
     background-attachment:fixed;
@@ -60,7 +60,8 @@
 
 #linkCatalog{
     margin: auto 10px;
-    font-size: 200%;
+    padding: 5px 15px;
+    font-size: 90%;
     text-decoration: none;
     color: #555;
     border: 2px solid #555;
@@ -68,7 +69,6 @@
 }
 
 #linkCatalog:hover{
-
     background-color: #555;
     color: #fff;
 }

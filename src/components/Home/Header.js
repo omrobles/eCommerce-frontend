@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from "../media/Cochinito_Lector-SF.png";
+import logo from "../../media/Cochinito_Lector-SF.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,

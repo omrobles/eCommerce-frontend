@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import BookContext from "../context/books/BookContext";
-import BookCard from "./BookCard";
+import BookContext from "../../context/books/BookContext";
+import BookCard from "../Catalog/BookCard";
 import "./Home.css";
 
 const Home = () => {
@@ -28,7 +28,7 @@ const Home = () => {
               return <BookCard key={book._id} book={book} />;
             })}
           <Link title="Ir a catálogo" id="linkCatalog" to="/catalogo">
-            ...
+            Ir al catálogo
           </Link>
         </div>
       </div>
