@@ -1,0 +1,41 @@
+.CartContainer{
+    width: 80%;
+    margin: 15px auto;
+}
+
+.CartContainer h2{
+    padding: 10px 0;
+}
+
+th{
+    width: 20%;
+}
+
+thead th{
+    background-color: #555;
+    color: #fff;
+    height: 25px;
+}
+
+tbody th{
+    font-size: 70%;
+    font-weight: 400;
+    border-bottom: 1px solid #555;
+    height: 25px;
+}
+
+svg{
+    cursor: pointer;
+}
+
+svg:hover{
+    color: #c0392b;
+}
+
+.CheckoutContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+

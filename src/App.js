@@ -14,6 +14,7 @@ import Footer from "./components/Home/Footer";
 
 import BookState from "./context/books/BookState";
 import UserState from "./context/users/UserState";
+import PrivateRoute from "./Auth/PrivateRoute";
 
 function App() {
   return (
@@ -25,11 +26,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalogo" element={<Catalog />} />
+              <Route path="/detalle/:_id" element={<BookDetail />} />
               <Route path="/registro" element={<Signup />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/perfil" element={<Profile />} />
-              <Route path="/carrito" element={<ShopBag />} />
-              <Route path="/detalle/:_id" element={<BookDetail />} />
+              <Route element={<PrivateRoute />}>
+                <Route path="/perfil" element={<Profile />} />
+              </Route>
+              <Route element={<PrivateRoute />}>
+                <Route path="/carrito" element={<ShopBag />} />
+              </Route>
             </Routes>
             <Footer />
           </Router>

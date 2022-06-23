@@ -6,8 +6,14 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="Footer">
-      <FontAwesomeIcon icon={faCopyright} />
-      <p>2022 U-Camp. Todos los derechos reservados. Esta página es para fines académicos.</p>
+      <div>
+        <p>
+          <span>
+            <FontAwesomeIcon icon={faCopyright} />
+          </span>
+          2022 U-Camp. Todos los derechos reservados. Esta página es para fines académicos.
+        </p>
+      </div>
     </div>
   );
 };
