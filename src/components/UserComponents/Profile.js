@@ -1,12 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import UserContext from "../../context/users/UserContext";
 import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const Profile = () => {
   const userCtx = useContext(UserContext);
 
-  const { userData, user, verifyingToken, handleChange, updateUser, setUserData } = userCtx;
+  const { userData, user, verifyingToken, handleChange, updateUser } = userCtx;
 
   const navigate = useNavigate();
 
@@ -56,7 +55,7 @@ const Profile = () => {
           </button>
           <button
             onClick={() => {
-              updateUser(userData);
+              updateData(userData);
             }}
           >
             Actualizar
